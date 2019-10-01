@@ -37,7 +37,7 @@
                 --display-h1-decoration: none;
             }
 
-            html {
+            body {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -48,6 +48,10 @@
             .terminal {
                 display: inline-block;
                 width: auto;
+            }
+
+            header, p, label, button {
+                user-select: none;
             }
 
             button {
@@ -64,46 +68,48 @@
             }
         </style>
     </head>
-    <body class="terminal">
-        <div class="container">
-            <header class="terminal-logo">
-                <div class="logo terminal-prompt">
-                    HackTCNJ 2020
-                </div>
-            </header>
-        </div>
+    <body>
+        <div class="terminal">
+            <div class="container">
+                <header class="terminal-logo">
+                    <div class="logo terminal-prompt">
+                        HackTCNJ 2020
+                    </div>
+                </header>
+            </div>
 
-        <div class="container">
-            <p>February 29 at 9am to March 1 at 3pm</p>
-            <p>
-                TCNJ Education Building<br>
-                2000 Pennington Rd<br>
-                Ewing Township, NJ 08628
-            </p>
-        </div>
+            <div class="container">
+                <p>February 29 at 9am to March 1 at 3pm</p>
+                <p>
+                    TCNJ Education Building<br>
+                    2000 Pennington Rd<br>
+                    Ewing Township, NJ 08628
+                </p>
+            </div>
 
-        <div class="container">
-            <form action="https://tcnj.us10.list-manage.com/subscribe/post" method="post">
-                <fieldset>
-                    <input type="hidden" name="u" value="bbccc42fc1a74775fee14e1a2">
-                    <input type="hidden" name="id" value="d4183ea857">
-                    <div class="form-group">
-                        <label for="MERGE0">Email:</label>
-                        <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
-                    </div>
-                    <div class="form-group">
-                        <label for="MERGE1">First Name:</label>
-                        <input type="text" name="MERGE1" id="MERGE1" size="25" value="">
-                    </div>
-                    <div class="form-group">
-                        <label for="MERGE2">Last Name:</label>
-                        <input type="text" name="MERGE2" id="MERGE2" size="25" value="">
-                    </div>
-                    <button role="button" name="submit" id="submit" style="display: block; margin: 0 auto;">
-                        Subscribe to the Mailing List
-                    </button>
-                </fieldset>
-            </form>
+            <div class="container">
+                <form action="https://tcnj.us10.list-manage.com/subscribe/post" method="post">
+                    <fieldset>
+                        <input type="hidden" name="u" value="bbccc42fc1a74775fee14e1a2">
+                        <input type="hidden" name="id" value="d4183ea857">
+                        <div class="form-group">
+                            <label for="MERGE0">Email:</label>
+                            <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="MERGE1">First Name:</label>
+                            <input type="text" name="MERGE1" id="MERGE1" size="25" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="MERGE2">Last Name:</label>
+                            <input type="text" name="MERGE2" id="MERGE2" size="25" value="">
+                        </div>
+                        <button role="button" name="submit" id="submit" style="display: block; margin: 0 auto;">
+                            Subscribe to the Mailing List
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </body>
 </html>
