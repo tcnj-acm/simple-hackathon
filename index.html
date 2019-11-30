@@ -37,17 +37,26 @@
                 --display-h1-decoration: none;
             }
 
-            body {
+            form {
+                margin-bottom: var(--global-line-height);
+            }
+
+            footer, body {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-                height: 100vh;
+            }
+
+            body {
+                padding-top: 20px;
+                padding-bottom: 20px;
             }
 
             .terminal {
                 display: inline-block;
                 width: auto;
+                max-width: 700px;
             }
 
             header, p, label, button {
@@ -69,6 +78,19 @@
             button:hover {
                 background-color: var(--primary-color);
                 color: var(--invert-font-color);
+            }
+
+            footer a {
+                text-decoration: none;
+            }
+
+            img {
+                width: 40px;
+                margin: 0 10px;
+            }
+
+            footer a:hover {
+                background: none;
             }
         </style>
     </head>
@@ -92,6 +114,12 @@
             </div>
 
             <div class="container">
+                <h2>What is HackTCNJ?</h2>
+                <p>The College of New Jersey’s annual 24-hour hackathon. All are welcome, especially if it is your first hackathon! Come join us for a fun weekend filled with programming, free food, swag, and games! Afterwards, walk away with new experiences and friendships :)</p>
+            </div>
+
+            <div class="container">
+                <h2>Sign up to get notified when HackTCNJ registration opens</h2>
                 <form action="https://tcnj.us10.list-manage.com/subscribe/post" method="post">
                     <fieldset>
                         <input type="hidden" name="u" value="bbccc42fc1a74775fee14e1a2">
@@ -114,6 +142,42 @@
                     </fieldset>
                 </form>
             </div>
+
+            <div class="container">
+                <h2>FAQ</h2>
+
+                <h3>What is a hackathon?</h3>
+                <p>A technology-focused event where teams create new projects in 24 hours. You can build anything you want, whether that be a mobile app, a website, or even a robot!</p>
+
+                <h3>Do I need to know how to code?</h3>
+                <p>Students of all skill levels are encouraged to attend, even if you’ve never programmed before. HackTCNJ is beginner friendly and we will host various workshops throughout the weekend that can help you get started.</p>
+
+                <h3>Who can attend?</h3>
+                <p>The first step to attend would be to register. Undergraduate students are encouraged to register but we would also love for high schoolers to join us! If you are under 18 and plan to attend, your parent or guardian must sign a waiver (which will be available soon).</p>
+
+                <h3>Do I have to pay?</h3>
+                <p>HackTCNJ is completely free thanks to our sponsors.</p>
+
+                <h3>What do I bring?</h3>
+                <p>You need a valid ID card for admission. Bring a laptop, charger, and a change of clothes. If you are staying overnight, please bring a sleeping bag and any toiletries you may need. Everything else will be provided!</p>
+
+                <h3>Will there be travel reimbursements?</h3>
+                <p>If you are driving or using public transportation (NJTransit/SEPTA) to get to the hackathon, you can be reimbursed as long as all tickets/receipts are provided day of. We will also be sending a shuttle bus to Rutgers - New Brunswick so stay tuned for more information!</p>
+
+                <h3>Can I come without a team?</h3>
+                <p>Yes please come even if you cannot form a team prior to the hackathon. We will have Slack communication channel open for people to find team members. We will also have a team formation event Saturday morning when the event begins!</p>
+            </div>
+
+            <div class="container">
+                <h3>Any questions?</h3>
+                <p>Email <a href="mailto:acm@tcnj.edu">acm@tcnj.edu</a>.</p>
+            </div>
+
+            <footer>
+                <a href="https://www.instagram.com/hacktcnj" target="_blank" rel="noopener"><img src="instagram.svg" alt="Instagram"></a>
+                <a href="https://twitter.com/hacktcnj" target="_blank" rel="noopener"><img src="twitter.svg" alt="Twitter"></a>
+                <a href="https://www.facebook.com/hacktcnj" target="_blank" rel="noopener"><img src="facebook.svg" alt="Facebook"></a>
+            </footer>
         </div>
     </body>
 </html>
